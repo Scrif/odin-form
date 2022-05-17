@@ -19,7 +19,7 @@
         <div class="container-right">
             <div class="header-container"></div>
             <div class="form-container">
-                <form>
+                <form id="signup">
                     <label for="firstname">First Name
                         <input type="text" id="firstname" name="firstname" required>
                         <div id="first-name-error" class="error"></div>
@@ -43,8 +43,10 @@
                     </label>
                 </form>
             </div>
-            <div class="btn-container"></div>
-            <div class="login-container"></div>
+            <div class="btn-container">
+                <button type="submit" form="signup">Create Account</button>
+                <p>Already have an account? <a href="">Log in</a></p>
+            </div>
         </div>
     </main>
 </body>
