@@ -10,3 +10,27 @@ const lnError = document.querySelector("#last-name-error");
 const emailError = document.querySelector("#email-error");
 const telError = document.querySelector("#tel-error");
 const pwConfirmError = document.querySelector("#password-confirm-error");
+
+firstName.addEventListener("input", function (event) {
+    if (firstName.value === "") {
+    fnError.textContent = "Please enter your first name.";
+    } else {
+        fnError.textContent = "";
+    }
+});
+
+lastName.addEventListener("input", function (event) {
+    if (lastName.value === "") {
+    lnError.textContent = "Please enter your last name.";
+    } else {
+        lnError.textContent = "";
+    }
+});
+
+tel.addEventListener("input", function (event) {
+    if (tel.validity.patternMismatch) {
+    telError.textContent = "Please enter a 10 digit phone number.";
+    } else {
+        fnError.textContent = "";
+    }
+});
