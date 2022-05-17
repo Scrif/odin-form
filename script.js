@@ -31,6 +31,14 @@ tel.addEventListener("input", function (event) {
     if (tel.validity.patternMismatch) {
     telError.textContent = "Please enter a 10 digit phone number.";
     } else {
-        fnError.textContent = "";
+        telError.textContent = "";
+    }
+});
+
+email.addEventListener("input", function (event) {
+    if (email.validity.typeMismatch) {
+    emailError.textContent = "Please enter a valid email. ex: johnSmith@email.com";
+    } else {
+        emailError.textContent = "";
     }
 });
