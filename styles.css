@@ -1,0 +1,22 @@
+body {
+    font-size: 1.2rem;
+    padding: 0px;
+    margin: 0px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.hero-container {
+    width: 60vw;
+    min-width: 300px;
+    height: 100vh;
+    background: url(./images/josefin-NeH6-YKTwUI-unsplash.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    color: white;
+}
